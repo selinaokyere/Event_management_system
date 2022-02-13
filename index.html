@@ -3,11 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Management System</title>
 </head>
 <body>
-    
+    <h1 class="text-center mt-4"> EVENT <span class="text-danger">MANAGEMENT</span> SYSTEM</h1>
+    <div class="container">
+        <form id="event-form">
+            <legend>Event Details</legend>
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <input class="form-control input-sm" id="event_name" type="text">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Start Date</label>
+                <input class="form-control input-sm" id="start-date" type="date">
+            </div>
+            <div class="form-group">
+                <label class="form-label">End Date</label>
+                <input class="form-control input-sm" id="end-date" type="date">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Total Expectd Registration</label>
+                <input class="form-control input-sm" id="event-expt-reg" type="number">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Type of Event</label>
+                <input class="form-control input-sm" id="event-type" type="text">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Host Name</label>
+                <input class="form-control input-sm" id="host-name" type="text">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Speaker Name</label>
+                <input class="form-control input-sm" id="Speaker-name" type="text" >
+            </div>
+            <input class="btn btn-primary" type="submit" value="Add Event">
+        </form>
+        <table class="table mt-5" id="event_list">
+            <tr>
+                <th>Event Name</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Total Expectd Registration</th>
+                <th>Type of Event</th>
+                <th>Host name</th>
+                <th>Speaker Name</th>
+            </tr>
+
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
